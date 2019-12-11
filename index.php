@@ -1,4 +1,20 @@
 <?php
+/*
+	index.php (PHP)
+	
+	Objetivo: Página de Login de usuários do site Project 256.
+	
+	Site: https://github.com/project-256-web/project-256
+	
+	Versão 1.0
+	
+	Programador: Rodolfo Dirack 11/12/2019
+	
+	Email (Manutenção): rodolfo_profissional@hotmail.com
+	
+	Licença: GPL-3.0 <https://www.gnu.org/licenses/gpl-3.0.txt>.
+ */
+
 require('assets/php/connect.php');
 
 if((!empty($_POST['usuario']) && isset($_POST['usuario'])) && (!empty($_POST['senha']) && isset($_POST['senha']))){
@@ -29,21 +45,6 @@ if((!empty($_POST['usuario']) && isset($_POST['usuario'])) && (!empty($_POST['se
 }
 ?>
 <!doctype html>
-<!--
-	index.php (PHP)
-	
-	Objetivo: Login de usuários em PHP.
-	
-	Site: http://www.dirackslounge.online
-	
-	Versão 1.0
-	
-	Programador: Rodolfo Dirack 22/07/2019
-	
-	Email: rodolfo_profissional@hotmail.com
-	
-	Licença: GPL-3.0 <https://www.gnu.org/licenses/gpl-3.0.txt>.
--->
 <head>
 	<meta charset="utf-8">
 	<title>Login</title>
