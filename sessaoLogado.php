@@ -1,4 +1,20 @@
 <?php 
+/*
+	sessaoLogado.php (PHP)
+	
+	Objetivo: Página de sessão do site Project 256.
+	
+	Site: https://github.com/project-256-web/project-256
+	
+	Versão 1.0
+	
+	Programador: Rodolfo Dirack 11/12/2019
+	
+	Email (Manutenção): rodolfo_profissional@hotmail.com
+	
+	Licença: GPL-3.0 <https://www.gnu.org/licenses/gpl-3.0.txt>.
+ */
+
 session_start();
 
 if((empty($_SESSION['id']) && !isset($_SESSION['id'])) && (empty($_SESSION['logado']) && !isset($_SESSION['logado']))){
@@ -13,21 +29,6 @@ if((empty($_SESSION['id']) && !isset($_SESSION['id'])) && (empty($_SESSION['loga
 ?>
 
 <!doctype html>
-<!--
-	sessaoLogado.php (PHP)
-	
-	Objetivo: Página de usuário logado
-	
-	Site: http://www.dirackslounge.online
-	
-	Versão 1.0
-	
-	Programador: Rodolfo Dirack 23/07/2019
-	
-	Email: rodolfo_profissional@hotmail.com
-	
-	Licença: GPL-3.0 <https://www.gnu.org/licenses/gpl-3.0.txt>.
--->
 <head>
 	<meta charset="utf-8">
 	<title>Bem vindo <?php echo $USER."!" ?></title>
