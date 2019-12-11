@@ -2,9 +2,9 @@
 /*
 	connect.php (PHP) 
 
-	Objetivo: Conexão com o banco de dados da página index.php
+	Objetivo: Conexão com o banco de dados utilizado PDO.
 
-	Programador: Rodolfo A. C. Neves (Dirack) 02/02/2019
+	Programador: Rodolfo A. C. Neves (Dirack) 11/12/2019
 */
 
 			//////////// Conexão com banco de dados //////////////////
