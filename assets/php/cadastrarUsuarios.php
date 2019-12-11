@@ -79,7 +79,7 @@ if(!empty($_POST['usuario']) && isset($_POST['usuario'])){
 
 	<form method="POST" class="cadastro" enctype="multipart/form-data">
 		<img src="../icons/icon.ico">
-		<h3>Cadastro de novo usuário do site Dirack's Lounge</h3>
+		<h3>Cadastro de novo usuário do site Project 256</h3>
 		<br><br>
 		<div class="formCadastro">
 			Usuário: <input type="text" name="usuario" required><br><br>
