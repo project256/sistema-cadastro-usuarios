@@ -54,7 +54,7 @@ if((!empty($_POST['usuario']) && isset($_POST['usuario'])) && (!empty($_POST['se
 	<div id="fundo-externo">
 		<div id="caixa-login">
 			<div class="title">
-				<img src="assets/icons/icon.ico"><span id="title">Dirack's Lounge</span>
+				<img src="assets/icons/icon.ico"><span id="title">Project 256</span>
 			</div>
 			<br>
 			<div class="formulario">
