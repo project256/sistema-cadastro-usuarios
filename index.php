@@ -17,7 +17,11 @@
 
 require('assets/php/connect.php');
 
-if((!empty($_POST['usuario']) && isset($_POST['usuario'])) && (!empty($_POST['senha']) && isset($_POST['senha']))){
+$userIsSet = (!empty($_POST['usuario']) && isset($_POST['usuario']));
+$passwdIsSet = (!empty($_POST['senha']) && isset($_POST['senha']));
+
+if($userIsSet && $passwdIsSet){
+
 	$USUARIO=$_POST['usuario'];
 	$SENHA=md5($_POST['senha']);
 
