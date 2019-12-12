@@ -63,9 +63,11 @@ if(!empty($_POST['usuario']) && isset($_POST['usuario'])){
 	$FOTO = preparaUpload();
 	$EMAIL = $_POST['email'];
 	
-
-	$sql = "INSERT INTO loginSiteDirack(usuario,senha,fotoPerfil,email) VALUES('$USUARIO','$SENHA','$FOTO','$EMAIL')";
-	$sql = $pdo->query($sql) 
+	//query substituido por prepare, e valores passados dentro do INSERT,substituido por array no execute
+	
+	$sql = "INSERT INTO loginSiteDirack(usuario,senha,fotoPerfil,email) VALUES(?,?,?,?)";
+	$sql = $pdo->prepare($sql) ;
+	$sql->execute(array($USUARIO,$SENHA,$FOTO,$EMAIL))
 	or die('Erro ao cadastrar usuário. Contate o administrador da página');
 
 	?>

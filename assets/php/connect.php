@@ -7,10 +7,17 @@
 	Programador: Rodolfo A. C. Neves (Dirack) 11/12/2019
 */
 
+//variaveis de  conexão adicionadas
+$host ='localhost';
+$db='dbase';	
+$user ='user';
+$pass='pswd';
+
+
 			//////////// Conexão com banco de dados //////////////////
 			try{
 
-				$pdo= new PDO("mysql:dbname=dbase;host=localhost","user","pswd");
+				$pdo= new PDO("mysql:dbname=$db;host=$host",$user,$pass);
 
 				//Configurar a conexão para utf8
 				$pdo->query("SET NAMES 'utf8'");
@@ -23,6 +30,8 @@
 				echo "ERRO: ".$e->getMessage();
 				exit;
 
+			}catch(Exception $erro){
+				return $erro->getMessage();
 			}
 
 ?>
