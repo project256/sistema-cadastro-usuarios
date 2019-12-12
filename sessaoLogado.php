@@ -16,8 +16,10 @@
  */
 
 session_start();
-
-if((empty($_SESSION['id']) && !isset($_SESSION['id'])) && (empty($_SESSION['logado']) && !isset($_SESSION['logado']))){
+$idIsNotSet = (empty($_SESSION['id']) || !isset($_SESSION['id']));
+$userIsNotLogged = (empty($_SESSION['logado']) || !isset($_SESSION['logado']));
+ 
+if($idIsNotSet && $userIsNotLogged){
 	echo "Você precisa estar logado para acessar esta página!<br>";
 	echo "<a href='index.php'>Voltar</a>";
 }else{
