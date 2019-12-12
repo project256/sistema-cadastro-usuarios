@@ -63,8 +63,6 @@ if(!empty($_POST['usuario']) && isset($_POST['usuario'])){
 	$FOTO = preparaUpload();
 	$EMAIL = $_POST['email'];
 	
-	//query substituido por prepare, e valores passados dentro do INSERT,substituido por array no execute
-	
 	$sql = "INSERT INTO loginSiteDirack(usuario,senha,fotoPerfil,email) VALUES(?,?,?,?)";
 	$sql = $pdo->prepare($sql) ;
 	$sql->execute(array($USUARIO,$SENHA,$FOTO,$EMAIL))
