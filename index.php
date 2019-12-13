@@ -8,7 +8,9 @@
 	
 	Versão 1.0
 	
-	Programador: Rodolfo Dirack 11/12/2019
+	Programador:	Gabriel Alves 13/12/2019 (Original - HTML)
+
+			Rodolfo Dirack 11/12/2019 (Modificado - PHP)
 	
 	Email (Manutenção): rodolfo_profissional@hotmail.com
 	
@@ -17,13 +19,13 @@
 
 require('assets/php/connect.php');
 
-$userIsSet = (!empty($_POST['usuario']) && isset($_POST['usuario']));
-$passwdIsSet = (!empty($_POST['senha']) && isset($_POST['senha']));
+$userIsSet = (!empty($_POST['Username']) && isset($_POST['Username']));
+$passwdIsSet = (!empty($_POST['Password']) && isset($_POST['Password']));
 
 if($userIsSet && $passwdIsSet){
 
-	$USUARIO=$_POST['usuario'];
-	$SENHA=md5($_POST['senha']);
+	$USUARIO=$_POST['Username'];
+	$SENHA=md5($_POST['Password']);
 
 	$sql = "SELECT * FROM loginSiteDirack WHERE usuario='".$USUARIO."' AND senha='".$SENHA."'";
 	$sql = $pdo->query($sql) or die('Erro na query de index.php');
@@ -48,30 +50,82 @@ if($userIsSet && $passwdIsSet){
 
 }
 ?>
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en" >
 <head>
-	<meta charset="utf-8">
-	<title>Login</title>
-	<link type="text/css" rel="stylesheet" href="assets/css/login.css">
+  <meta charset="UTF-8">
+  <title>Log in / Sign up</title>
+  <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-	<div id="fundo-externo">
-		<div id="caixa-login">
-			<div class="title">
-				<img src="assets/icons/icon.ico"><span id="title">Project 256</span>
-			</div>
-			<br>
-			<div class="formulario">
-			<form method="POST">
-				Usuário:<input type="text" name="usuario" required><br><br>
-				Senha:<br><input type="text" name="senha" required><br><br>
-				<small>Ainda não é cadastrado? 
-					<a href="assets/php/cadastrarUsuarios.php">Crie sua conta!</a>
-				</small><br><br>
-				<input class="botaoEnviar" type="submit" value="Entrar">
-			</form>
-			</div>
-		</div>
-	</div>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div class="box"></div>
+  <div class="container-forms">
+    <div class="container-info">
+      <div class="info-item">
+        <div class="table">
+          <div class="table-cell">
+            <p>
+              Você tem uma conta?
+            </p>
+            <div class="btn">
+              Entrar
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="table">
+          <div class="table-cell">
+            <p>
+              Você não tem uma conta?
+            </p>
+            <div class="btn">
+              Cadastrar
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-form">
+      <div class="form-item log-in">
+        <div class="table">
+	  <div class="table-cell">
+
+		<!-- Rodolfo Dirack alterou esta parte em 13/12/2019 -->
+		<!-- TODO: Verificar os botões e o DOM -->
+		<form method="POST">
+	            <input name="Username" placeholder="Nome" type="text" required/>
+        	    <input name="Password" placeholder="Senha" type="Password" required/>
+            		<!--<div class="btn"  name="submit">-->
+	     		<input class="btn" type="submit" value="Entrar">
+	    		<!--</div>-->
+		</form>
+
+          </div>
+        </div>
+      </div>
+      <div class="form-item sign-up">
+        <div class="table">
+          <div class="table-cell">
+            <input name="email" placeholder="Email" type="text" required/>
+            <input name="fullName" placeholder="Nome Completo" type="text" required/>
+            <input name="Username" placeholder="Nome de usuário" type="text" required/>
+            <input name="Password" placeholder="Senha" type="Password" required/>
+            <div class="btn">
+              Cadastrar
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<a class="box-item" href="https://www.instagram.com/gabrielalves.code/" target="_blank"><img src="logo1.png" class="rabbit"> </a>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./script.js"></script>
+
 </body>
 </html>
