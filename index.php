@@ -109,14 +109,19 @@ if($userIsSet && $passwdIsSet){
       </div>
       <div class="form-item sign-up">
         <div class="table">
-          <div class="table-cell">
-            <input name="email" placeholder="Email" type="text" required/>
-            <input name="fullName" placeholder="Nome Completo" type="text" required/>
-            <input name="Username" placeholder="Nome de usuário" type="text" required/>
-            <input name="Password" placeholder="Senha" type="Password" required/>
-            <div class="btn">
-              Cadastrar
-            </div>
+	  <div class="table-cell">
+
+		<!-- Rodolfo Dirack alterou aqui em 13/12/2019 -->
+		<form method="POST" action="./assets/php/cadastrarUsuarios.php">
+        	<input name="email" placeholder="Email" type="text" required/>
+        	<input name="fullName" placeholder="Nome Completo" type="text" required/>
+        	<input name="Username" placeholder="Nome de usuário" type="text" required/>
+        	<input name="Password" placeholder="Senha" type="Password" required/>
+	        <!--<div class="btn">-->
+        	<input class="btn" type="submit" value=" Cadastrar">
+		<!--</div>-->
+		</form>
+
           </div>
         </div>
       </div>
