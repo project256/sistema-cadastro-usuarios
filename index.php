@@ -39,9 +39,10 @@ if($userIsSet && $passwdIsSet){
 			$_SESSION['fotoPerfil'] = $p['fotoPerfil'];
 			$_SESSION['email'] = $p['email'];
 			$_SESSION['id'] = $p['id'];
+			$_SESSION['nome'] = $p['nome'];
 		}
 
-		header('Location: sessaoLogado.php');
+		header('Location: Page.php');
 	} else {
 		echo "Usuário não encontrado!";
 		echo "<a href='index.php'>Voltar</a>";
