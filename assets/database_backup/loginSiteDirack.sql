@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 13, 2019 at 03:34 PM
+-- Generation Time: Dec 13, 2019 at 06:07 PM
 -- Server version: 5.7.28-0ubuntu0.18.04.4
 -- PHP Version: 7.1.33-2+ubuntu18.04.1+deb.sury.org+1
 
@@ -32,6 +32,7 @@ CREATE TABLE `loginSiteDirack` (
   `senha` varchar(32) NOT NULL,
   `fotoPerfil` varchar(150) NOT NULL DEFAULT 'assets/userImages/bobo.jpg',
   `email` varchar(100) NOT NULL,
+  `nome` varchar(100) NOT NULL,
   `aprovado` enum('s','n') NOT NULL DEFAULT 'n'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -39,9 +40,9 @@ CREATE TABLE `loginSiteDirack` (
 -- Dumping data for table `loginSiteDirack`
 --
 
-INSERT INTO `loginSiteDirack` (`id`, `usuario`, `senha`, `fotoPerfil`, `email`, `aprovado`) VALUES
-(6, 'Rodolfo', '827ccb0eea8a706c4c34a16891f84e7b', '6eeff298dbf2d6d470b0eda9c11d9f6a', 'rodolfo_profissional@hotmail.com', 'n'),
-(7, 'teste', '827ccb0eea8a706c4c34a16891f84e7b', '88b5b303e168c8bb5002163749c950a5', 'teste@gmail.com', 'n');
+INSERT INTO `loginSiteDirack` (`id`, `usuario`, `senha`, `fotoPerfil`, `email`, `nome`, `aprovado`) VALUES
+(6, 'Rodolfo', '827ccb0eea8a706c4c34a16891f84e7b', '6eeff298dbf2d6d470b0eda9c11d9f6a', 'rodolfo_profissional@hotmail.com', 'Rodolfo André Cardoso Neves', 'n'),
+(7, 'teste', '827ccb0eea8a706c4c34a16891f84e7b', '88b5b303e168c8bb5002163749c950a5', 'teste@gmail.com', 'Teste Fulano da Silva Cicrano', 'n');
 
 --
 -- Indexes for dumped tables
@@ -62,7 +63,7 @@ ALTER TABLE `loginSiteDirack`
 -- AUTO_INCREMENT for table `loginSiteDirack`
 --
 ALTER TABLE `loginSiteDirack`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
