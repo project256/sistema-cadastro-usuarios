@@ -1,17 +1,39 @@
-<!--
- =========================================================
- * Material Kit - v2.0.6
- =========================================================
+<?php
+/*
+	 perfil.php (PHP)
+	 
+	 Objetivo: Página de perfil de usuário do site Project 256.
+	 
+	 Site: https://github.com/project-256-web/project-256
+	 
+	 Versão 1.0
+	 
+	 Programador:	Nikolas 13/12/2019 (Original - HTML/JS)
 
- * Product Page: https://www.creative-tim.com/product/material-kit
- * Copyright 2019 Creative Tim (http://www.creative-tim.com)
-   Licensed under MIT (https://github.com/creativetimofficial/material-kit/blob/master/LICENSE.md)
+			Rodolfo Dirack 13/12/2019 (Modificada - PHP)
+	 
+	 Email (manutenção): rodolfo_profissional@hotmail.com
+	 
+	 Licença: GPL-3.0 <https://www.gnu.org/licenses/gpl-3.0.txt>.
+*/
 
+session_start();
 
- =========================================================
+$idIsNotSet = (empty($_SESSION['id']) || !isset($_SESSION['id']));
+$userIsNotLogged = (empty($_SESSION['logado']) || !isset($_SESSION['logado']));
 
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+if($idIsNotSet && $userIsNotLogged){
+        echo "Você precisa estar logado para acessar esta página!<br>";
+        echo "<a href='index.php'>Voltar</a>";
+}else{
 
+        $USER=$_SESSION['usuario'];
+        $FOTO=$_SESSION['fotoPerfil'];
+        $EMAIL=$_SESSION['email'];
+        $ID=$_SESSION['id'];
+        $NOME=$_SESSION['nome'];
+	 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -49,7 +71,7 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="#pablo" class="nav-link">
+            <a href="./Page.php" class="nav-link">
               <i class="material-icons">home</i> Home
             </a>
           </li>
@@ -81,10 +103,12 @@
           <div class="col-md-6 ml-auto mr-auto">
             <div class="profile">
               <div class="avatar">
-                <img src="./assets/img/user background-white.jpg" alt="Circle Image" class="img-raised rounded-circle img-fluid">
+		<img <?php echo "src=./assets/userImages/$FOTO"; ?> alt="Circle Image" class="img-raised rounded-circle img-fluid">
               </div>
               <div class="name">
-                <h3 class="title">Nome do usuario</h3>
+	      <h3 class="title"><?php echo "$USER"; ?></h3>
+		<h5 class="title"><?php echo "$NOME"; ?></h5>
+
                 <h6>Descrição</h6>
                 
               </div>
@@ -133,26 +157,26 @@
           <div class="tab-pane text-center gallery" id="works">
             <div class="row">
               <div class="col-md-3 ml-auto">
-                <img src="/MATERIALIZE/webserver/256/assets/img/galeria.jpeg" class="rounded">
-                <img src="/MATERIALIZE/webserver/256/assets/img/galeria.jpeg" class="rounded">
-                <img src="/MATERIALIZE/webserver/256/assets/img/galeria.jpeg" class="rounded">
+                <img src="./assets/img/galeria.jpeg" class="rounded">
+                <img src="./assets/img/galeria.jpeg" class="rounded">
+                <img src="./assets/img/galeria.jpeg" class="rounded">
               </div>
               <div class="col-md-3 mr-auto">
-                <img src="/MATERIALIZE/webserver/256/assets/img/galeria.jpeg" class="rounded">
-                <img src="/MATERIALIZE/webserver/256/assets/img/galeria.jpeg" class="rounded">
+                <img src="./assets/img/galeria.jpeg" class="rounded">
+                <img src="./assets/img/galeria.jpeg" class="rounded">
               </div>
             </div>
           </div>
           <div class="tab-pane text-center gallery" id="favorite">
             <div class="row">
               <div class="col-md-3 ml-auto">
-                <img src="/MATERIALIZE/webserver/256/assets/img/galeria.jpeg" class="rounded">
-                <img src="/MATERIALIZE/webserver/256/assets/img/galeria.jpeg" class="rounded">
+                <img src="./assets/img/galeria.jpeg" class="rounded">
+                <img src="./assets/img/galeria.jpeg" class="rounded">
               </div>
               <div class="col-md-3 mr-auto">
-                <img src="/MATERIALIZE/webserver/256/assets/img/galeria.jpeg" class="rounded">
-                <img src="/MATERIALIZE/webserver/256/assets/img/galeria.jpeg" class="rounded">
-                <img src="/MATERIALIZE/webserver/256/assets/img/galeria.jpeg" class="rounded">
+                <img src="./assets/img/galeria.jpeg" class="rounded">
+                <img src="./assets/img/galeria.jpeg" class="rounded">
+                <img src="./assets/img/galeria.jpeg" class="rounded">
               </div>
             </div>
           </div>
@@ -192,18 +216,21 @@
     </div>
   </footer>
   <!--   Core JS Files   -->
-  <script src="../assets/js/core/jquery.min.js" type="text/javascript"></script>
-  <script src="../assets/js/core/popper.min.js" type="text/javascript"></script>
-  <script src="../assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-  <script src="../assets/js/plugins/moment.min.js"></script>
+  <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+  <script src="./assets/js/plugins/moment.min.js"></script>
   <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
-  <script src="../assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+  <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
   <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-  <script src="../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
   <!--  Google Maps Plugin    -->
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-  <script src="../assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
+  <script src="./assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
 </body>
 
 </html>
+<?php
+}
+?>

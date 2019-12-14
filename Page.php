@@ -74,7 +74,7 @@ if($idIsNotSet && $userIsNotLogged){
             </a>
           </li>
           <li class="nav-item">
-            <a href="#pablo" class="nav-link">
+            <a href="./perfil.php" class="nav-link">
               <i class="material-icons">account_circle</i> Perfil
             </a>
           </li>
