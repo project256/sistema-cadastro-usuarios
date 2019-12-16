@@ -12,7 +12,6 @@
               Sobre nós
             </a>
           </li>
-          </li>
           <li>
             <a href="https://www.google.com">
               Contato
