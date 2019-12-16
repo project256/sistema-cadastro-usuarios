@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 13, 2019 at 06:07 PM
+-- Generation Time: Dec 16, 2019 at 10:49 AM
 -- Server version: 5.7.28-0ubuntu0.18.04.4
 -- PHP Version: 7.1.33-2+ubuntu18.04.1+deb.sury.org+1
 
@@ -30,7 +30,7 @@ CREATE TABLE `loginSiteDirack` (
   `id` int(11) NOT NULL,
   `usuario` varchar(100) NOT NULL,
   `senha` varchar(32) NOT NULL,
-  `fotoPerfil` varchar(150) NOT NULL DEFAULT 'assets/userImages/bobo.jpg',
+  `fotoPerfil` varchar(150) NOT NULL DEFAULT 'bobo.jpg',
   `email` varchar(100) NOT NULL,
   `nome` varchar(100) NOT NULL,
   `aprovado` enum('s','n') NOT NULL DEFAULT 'n'
@@ -42,7 +42,8 @@ CREATE TABLE `loginSiteDirack` (
 
 INSERT INTO `loginSiteDirack` (`id`, `usuario`, `senha`, `fotoPerfil`, `email`, `nome`, `aprovado`) VALUES
 (6, 'Rodolfo', '827ccb0eea8a706c4c34a16891f84e7b', '6eeff298dbf2d6d470b0eda9c11d9f6a', 'rodolfo_profissional@hotmail.com', 'Rodolfo André Cardoso Neves', 'n'),
-(7, 'teste', '827ccb0eea8a706c4c34a16891f84e7b', '88b5b303e168c8bb5002163749c950a5', 'teste@gmail.com', 'Teste Fulano da Silva Cicrano', 'n');
+(7, 'teste', '827ccb0eea8a706c4c34a16891f84e7b', '88b5b303e168c8bb5002163749c950a5', 'teste@gmail.com', 'Teste Fulano da Silva Cicrano', 'n'),
+(8, 'Fulano', '827ccb0eea8a706c4c34a16891f84e7b', 'bobo.jpg', 'fulano@gmail.com', 'Fulano Desconhecido das Neves', 'n');
 
 --
 -- Indexes for dumped tables
