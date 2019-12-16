@@ -9,9 +9,9 @@
 
 //variaveis de  conexão adicionadas
 $host ='localhost';
-$db='dbase';	
-$user ='user';
-$pass='pswd';
+$db='test123';	
+$user ='root';
+$pass='';
 
 
 			//////////// Conexão com banco de dados //////////////////

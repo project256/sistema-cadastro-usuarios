@@ -40,11 +40,11 @@ if($idIsNotSet && $userIsNotLogged){
 
 <head>
   <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/logo/apple-icon.png">
+  <link rel="icon" type="image/png" href="./assets/img/logo/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Material Kit by Creative Tim
+    Project 256
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -60,7 +60,7 @@ if($idIsNotSet && $userIsNotLogged){
   <nav class="navbar navbar-expand-lg bg-primary">
     <div class="container">
       <div class="navbar-translate">
-        <a class="navbar-brand" href="#0"><img src="./assets/img/logo.png"></img></a>
+        <a class="navbar-brand" href="#0"><img src="./assets/img/logo/logo.png"></img></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Navegação</span>
           <span class="navbar-toggler-icon"></span>
@@ -88,7 +88,7 @@ if($idIsNotSet && $userIsNotLogged){
                   <a class="dropdown-item" href="#">Perfil</a>
                   <a class="dropdown-item" href="#">conta</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Sair</a></div>
+                  <a class="dropdown-item" href='assets/php/encerraSessao.php'>Sair</a></div>
           </li>
         </ul>
       </div>
@@ -103,7 +103,7 @@ if($idIsNotSet && $userIsNotLogged){
           <div class="col-md-6 ml-auto mr-auto">
             <div class="profile">
               <div class="avatar">
-		<img <?php echo "src=./assets/userImages/$FOTO"; ?> alt="Circle Image" class="img-raised rounded-circle img-fluid">
+		<img <?php echo "src=./assets/img/$FOTO"; ?> alt="Circle Image" class="img-raised rounded-circle img-fluid">
               </div>
               <div class="name">
 	      <h3 class="title"><?php echo "$USER"; ?></h3>
@@ -116,7 +116,7 @@ if($idIsNotSet && $userIsNotLogged){
           </div>
         </div>
         <div class="description text-center">
-          <p>Conte mais sobre você !</p>
+        <input type="textbox" placeholder="Conte mais sobre você!">
         </div>
         <div class="row">
           <div class="col-md-6 ml-auto mr-auto">
