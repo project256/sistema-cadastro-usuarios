@@ -1,3 +1,24 @@
+<?php
+/*
+	 footer.php (PHP)
+	 
+	 Objetivo: Rodapé das páginas do site Project 256.
+	 
+	 Site: https://github.com/project-256-web/project-256
+	 
+	 Versão 1.0
+	 
+	 Programador:	Gabriel Alves 16/12/2019 (Original - PHP)
+	 
+	 Email (Manutenção): rodolfo_profissional@hotmail.com
+	 
+	 Licença: GPL-3.0 <https://www.gnu.org/licenses/gpl-3.0.txt>.
+*/
+	 
+	 
+?>
+
+
 <footer class="footer" data-background-color="black">
     <div class="container">
       <nav class="float-left">
