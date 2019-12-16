@@ -24,8 +24,8 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/logo/apple-icon.png" />
-  <link rel="icon" type="image/png" href="./assets/img/logo/favicon.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/Logo/apple-icon.png" />
+  <link rel="icon" type="image/png" href="./assets/img/Logo/favicon.png" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
     Project 256
@@ -44,7 +44,7 @@
 <nav class="navbar navbar-expand-lg bg-primary">
     <div class="container">
       <div class="navbar-translate">
-        <a class="navbar-brand" href="#0"><img src="./assets/img/logo/logo.png"></img></a>
+        <a class="navbar-brand" href="#0"><img src="./assets/img/Logo/logo.png"></img></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="sr-only">Navegação</span>
           <span class="navbar-toggler-icon"></span>
