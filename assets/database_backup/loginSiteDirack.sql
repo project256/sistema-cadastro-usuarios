@@ -30,7 +30,7 @@ CREATE TABLE `loginSiteDirack` (
   `id` int(11) NOT NULL,
   `usuario` varchar(100) NOT NULL,
   `senha` varchar(32) NOT NULL,
-  `fotoPerfil` varchar(150) NOT NULL DEFAULT 'assets/userImages/bobo.jpg',
+  `fotoPerfil` varchar(150) NOT NULL DEFAULT 'bobo.jpg',
   `email` varchar(100) NOT NULL,
   `nome` varchar(100) NOT NULL,
   `aprovado` enum('s','n') NOT NULL DEFAULT 'n'
