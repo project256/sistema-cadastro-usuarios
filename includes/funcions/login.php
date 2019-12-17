@@ -40,6 +40,7 @@ if($userIsSet && $passwdIsSet){
 			$_SESSION['email'] = $p['email'];
 			$_SESSION['id'] = $p['id'];
 			$_SESSION['nome'] = $p['nome'];
+			$_SESSION['senha'] = $p['senha'];
 		}
 
 		header('Location: Page.php');
