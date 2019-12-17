@@ -6,6 +6,7 @@ $userIsSet = (!empty($_POST['usuario']) && isset($_POST['usuario']));
 $mailIsSet = (!empty($_POST['email']) && isset($_POST['email']));
 $id = $_SESSION['id'];
 
+//Trocar o nome
 if($nameIsSet){
     $NOME = $_POST['nome'];
     
@@ -20,6 +21,7 @@ if($nameIsSet){
     }
     
 }
+//Trocar a senha
 if($passIsSet){
     $SENHA   = md5($_POST['senha']);
 
@@ -33,6 +35,7 @@ if($passIsSet){
         exit;
     }
 }
+//Trocar o usuário
 if($userIsSet){
     $USER  = $_POST['usuario'];
 
@@ -40,6 +43,20 @@ if($userIsSet){
         $sql = "UPDATE loginsitedirack set usuario = '$USER' where id = '$id'";
         $sql = $pdo->query($sql) or die();
         $_SESSION['usuario'] = $USER;
+
+    } catch (PDOExcpetion $e) {
+        echo "ERRO: ".$e->getMessage();
+        exit;
+    }
+}
+//Trocar o Email
+if($mailIsSet){
+    $EMAIL  = $_POST['email'];
+
+    try {
+        $sql = "UPDATE loginsitedirack set email = '$EMAIL' where id = '$id'";
+        $sql = $pdo->query($sql) or die();
+        $_SESSION['email'] = $EMAIL;
 
     } catch (PDOExcpetion $e) {
         echo "ERRO: ".$e->getMessage();

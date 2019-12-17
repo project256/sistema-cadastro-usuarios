@@ -31,11 +31,12 @@ if(!empty($_POST['Username']) && isset($_POST['Username'])){
 	$USUARIO = $_POST['Username'];
 	$SENHA = md5($_POST['Password']);
 	$EMAIL = $_POST['email'];
-	$NOME = $_POST['fullName'];
+	$NOME = $_POST['nome'];
+	$SOBRE = $_POST['sobre'];
 	
-	$sql = "INSERT INTO loginSiteDirack(usuario,senha,email,nome) VALUES(?,?,?,?)";
+	$sql = "INSERT INTO loginSiteDirack(usuario,senha,email,nome,sobrenome) VALUES(?,?,?,?,?)";
 	$sql = $pdo->prepare($sql) ;
-	$sql->execute(array($USUARIO,$SENHA,$EMAIL,$NOME))
+	$sql->execute(array($USUARIO,$SENHA,$EMAIL,$NOME,$SOBRE))
 	or die('Erro ao cadastrar usuário. Contate o administrador da página');
 
 	echo "<h2>Cadastro enviado com sucesso para a base de dados, aguarde aprovação</h2>";

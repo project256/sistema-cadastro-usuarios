@@ -66,7 +66,8 @@
 		<!-- Rodolfo Dirack alterou aqui em 13/12/2019 -->
 		<form method="POST" action="./assets/php/cadastrarUsuarios.php">
         	<input name="email" placeholder="Email" type="text" required/>
-        	<input name="fullName" placeholder="Nome Completo" type="text" required/>
+        	<input name="nome" placeholder="Nome" type="text" required/>          
+        	<input name="sobre" placeholder="Sobrenome" type="text" required/>
         	<input name="Username" placeholder="Nome de usuário" type="text" required/>
         	<input name="Password" placeholder="Senha" type="Password" required/>
 	        <!--<div class="btn">
