@@ -10,7 +10,7 @@
     background: rgba(0,0,0,0.7);
   }
   #ctnModal {
-    width: 90%;
+    width: 50%;
     top: 0;
     display: flex;
     flex-direction: column;
@@ -33,27 +33,38 @@
     color: #666;
     font-size: 18px;
   }
-  form {
-    width: 45%;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px 0px 10px 20px;
+  .form{
+    
+      margin: 0 auto;
+      width: 50%;
   }
-  form input[name="cpfCnpj"] {
+  input[type="text"],input[type="email"]{
+    padding: 8px;
+    margin: 5px 0;
     width: 100%;
-    margin-bottom: 15px;
-    padding: 10px 10px;
-  }
-  form div {
-    display: flex;
-    justify-content: space-between;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+input[type="submit"]{
+    background-color: #3498db;
+    border-radius: 5px;
+    color: #fff;
+    padding: 6px 15px;
+    border: 0;
+    cursor: pointer;
+}
+textarea{
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
     width: 100%;
-  }
-  form input[name="email"] {
-    padding: 10px 10px;
-  }
-  form div input[name="submit"]{
-    padding: 4 20px;
-    background: white;
-    border: 1px #aaa solid;;
-  }
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
