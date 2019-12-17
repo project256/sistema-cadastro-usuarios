@@ -1,0 +1,51 @@
+
+.upoptions{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    background: #ccc;
+    padding: 6px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: none;
+}
+.avatar img{
+    cursor: pointer;
+    width: 160px;
+    height: 160px;
+}
+input[type='file']{
+    display: none;
+}
+.upoptions label, .remover{
+  background-color: #3498db;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  padding: 6px 15px;
+  
+}
+form{
+    margin-bottom: 5px;
+}
+a.remover{
+    text-decoration: none;
+    color: #fff;
+}
+input[type='submit']{
+    background-color: #3498db;
+    border-radius: 5px;
+    color: #fff;
+    border: 0;
+    height: 14px;
+    line-height: 1px;
+    padding: 14px;
+    padding-right: 60px;
+    margin-bottom: 10px;
+    width: 66px;   
+}

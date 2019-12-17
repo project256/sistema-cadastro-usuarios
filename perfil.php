@@ -54,6 +54,7 @@ if($idIsNotSet && $userIsNotLogged){
   <link href="./assets/css/material-kit.css?v=2.0.6" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="./assets/css/demo.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/perfil.css">
 </head>
 
 <body class="profile-page sidebar-collapse">
@@ -103,7 +104,16 @@ if($idIsNotSet && $userIsNotLogged){
           <div class="col-md-6 ml-auto mr-auto">
             <div class="profile">
               <div class="avatar">
-		<img <?php echo "src=./assets/img/$FOTO"; ?> alt="Circle Image" class="img-raised rounded-circle img-fluid">
+              <img id="avatar" <?php echo "src=./assets/userImages/$FOTO"; ?> alt="Circle Image" class="img-raised rounded-circle img-fluid">
+              </div>
+
+              <div   class="upoptions" >
+                <form   method="post" enctype="multipart/form-data" action="assets/php/uploadImg.php">
+                <label   for="enviar">Escolher </label>
+                <input id='enviar' name="arquivo" type="file" /><br>
+               <input type="submit" value="Enviar" />
+                </form>                
+              <a class='remover' href="assets/php/removerFoto.php">Remover</span></a>
               </div>
               <div class="name">
 	      <h3 class="title"><?php echo "$USER"; ?></h3>
@@ -198,6 +208,7 @@ if($idIsNotSet && $userIsNotLogged){
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
   <script src="./assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
+  <script src="./assets/js/scripts.js"></script>
 </body>
 
 </html>
