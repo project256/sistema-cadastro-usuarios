@@ -1,5 +1,4 @@
 <?php
-session_start();
 require('connect.php');
 $id = $_SESSION['id'];
 
@@ -8,4 +7,4 @@ $sql = $pdo->query($sql) or die();
 
 $_SESSION['fotoPerfil'] = 'bobo.jpg';
 
-header("Location: /project-256-feature-sistemaLogin/perfil.php");
+header("Location: /project-256/perfil.php");

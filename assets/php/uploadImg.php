@@ -1,5 +1,4 @@
 <?php
-session_start();
 require('connect.php');
 $id = $_SESSION['id'];
 echo $id;
