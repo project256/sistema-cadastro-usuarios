@@ -33,8 +33,8 @@
               Sobre nós
             </a>
           </li>
-          <li>
-            <a href="https://www.google.com">
+          <li>          
+            <a id="openModal" href="#">
               Contato
             </a>
           </li>
@@ -48,7 +48,9 @@
         <a href="https://www.google.com" target="_blank">Project 256</a>.
       </div>
     </div>
+    
   </footer>
+  
   <!--   Core JS Files   -->
   <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
   <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
@@ -62,6 +64,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
   <script src="./assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
+  <script src="./assets/js/modal.js"></script>
   <script>
     $(document).ready(function() {
       //init DateTimePickers

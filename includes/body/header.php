@@ -38,6 +38,8 @@
   <link href="./assets/css/material-kit.css" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="./assets/demo/demo.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/modal.css">
+  <link rel="stylesheet" href="./assets/css/estilo.css">
 </head>
 
 <body>
