@@ -49,7 +49,7 @@ if ( isset( $_FILES[ 'arquivo' ][ 'name' ] ) && $_FILES[ 'arquivo' ][ 'error' ] 
             }
             
 
-            header("Location: /project-256-feature-sistemaLogin/perfil.php");
+            header("Location: /project-256/perfil.php");
         }
         else
             echo 'Erro ao salvar o arquivo. Aparentemente você não tem permissão de escrita.<br />';
