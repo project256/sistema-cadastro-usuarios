@@ -69,8 +69,7 @@
                   <i class="material-icons">settings</i>Configurações
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
-                  <a class="dropdown-item" href="#">Perfil</a>
-                  <a class="dropdown-item" href="#">conta</a>
+                  <a class="dropdown-item" href="assets/php/editarPerfil.php">Editar Perfil</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href='assets/php/encerraSessao.php'>Sair</a></div>
           </li>
