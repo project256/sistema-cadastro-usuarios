@@ -184,37 +184,7 @@ if($idIsNotSet && $userIsNotLogged){
       </div>
     </div>
   </div>
-  <footer class="footer" data-background-color="black">
-    <div class="container">
-      <nav class="float-left">
-        <ul>
-          <li>
-            <a href="https://www.google.com">
-              Project 256
-            </a>
-          </li>
-          <li>
-            <a href="https://www.google.com">
-              Sobre nós
-            </a>
-          </li>
-          </li>
-          <li>
-            <a href="https://www.google.com">
-              Contato
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="copyright float-right">
-        &copy;
-        <script>
-          document.write(new Date().getFullYear())
-        </script>, Desenvolvido com <i class="material-icons">favorite</i> pelo time da  
-        <a href="https://www.google.com" target="_blank">Project 256</a>.
-      </div>
-    </div>
-  </footer>
+  <?php include 'includes/body/footer.php'; ?>
   <!--   Core JS Files   -->
   <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
   <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
