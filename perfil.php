@@ -116,8 +116,9 @@ if($idIsNotSet && $userIsNotLogged){
               <a class='remover' href="assets/php/removerFoto.php">Remover</span></a>
               </div>
               <div class="name">
-	      <h3 class="title"><?php echo "$USER"; ?></h3>
-		<h5 class="title"><?php echo "$NOME"; ?></h5>
+	      <h3 style="text-transform:capitalize;" class="title"><?php echo "$USER"; ?></h3>
+		<h5 style="text-transform:capitalize;" class="title"><?php echo "$NOME"." $SOBRE"; ?></h5>
+    <h5 style="text-transform:capitalize;" class="title"><?php echo "$EMAIL"; ?></h5>
 
                 <h6>Descrição</h6>
                 

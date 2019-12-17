@@ -6,6 +6,7 @@ var_dump($_SESSION);
 <form action="atulizarPerfil.php" method="POST" autocomplete="off">
 
 <input type="text" name="nome" placeholder="Trocar Nome"><br>
+<input type="text" name="sobre" placeholder="Trocar Sobrenome"><br>
 <input type="text" name="usuario" placeholder="Trocar Usuário"><br>
 <input type="email" name="email"  placeholder="Trocar Email"><br>
 <input type="password" name="senha" placeholder="Trocar Senha"><br>
