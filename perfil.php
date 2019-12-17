@@ -55,10 +55,11 @@ if($idIsNotSet && $userIsNotLogged){
   <link href="./assets/css/material-kit.css?v=2.0.6" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="./assets/css/demo.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./assets/css/perfil.css">
+  <link rel="stylesheet" href="./assets/css/perfill.css">
 </head>
 
 <body class="profile-page sidebar-collapse">
+
   <nav class="navbar navbar-expand-lg bg-primary">
     <div class="container">
       <div class="navbar-translate">
@@ -95,7 +96,6 @@ if($idIsNotSet && $userIsNotLogged){
       </div>
     </div>
   </nav>
-
   <div class="page-header header-filter" data-parallax="true" style="background-image: url('./assets/img/city-profile.jpg');"></div>
   <div class="main main-raised">
     <div class="profile-content">
@@ -106,8 +106,8 @@ if($idIsNotSet && $userIsNotLogged){
               <div class="avatar">
               <img id="avatar" <?php echo "src=./assets/userImages/$FOTO"; ?> alt="Circle Image" class="img-raised rounded-circle img-fluid">
               </div>
-
-              <div   class="upoptions" >
+              
+              <div class="upoptions" >
                 <form   method="post" enctype="multipart/form-data" action="assets/php/uploadImg.php">
                 <label   for="enviar">Escolher </label>
                 <input id='enviar' name="arquivo" type="file" /><br>

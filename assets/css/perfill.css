@@ -12,7 +12,9 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     display: none;
+    z-index: 5;
 }
+
 .avatar img{
     cursor: pointer;
     width: 160px;
@@ -30,6 +32,7 @@ input[type='file']{
   padding: 6px 15px;
   
 }
+
 form{
     margin-bottom: 5px;
 }
@@ -48,4 +51,5 @@ input[type='submit']{
     padding-right: 60px;
     margin-bottom: 10px;
     width: 66px;   
+    cursor: pointer;
 }
