@@ -3,7 +3,7 @@
     position: absolute;
     top: 0;
     left: 50%;
-    background: #ccc;
+    background: rgb(224, 217, 217);
     padding: 6px;
     padding-bottom: 20px;
     border-radius: 5px;
@@ -24,7 +24,7 @@ input[type='file']{
     display: none;
 }
 .upoptions label, .remover{
-  background-color: #3498db;
+  background-color:#9c27b0 ;
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
@@ -41,7 +41,7 @@ a.remover{
     color: #fff;
 }
 input[type='submit']{
-    background-color: #3498db;
+    background-color: #9c27b0;
     border-radius: 5px;
     color: #fff;
     border: 0;
