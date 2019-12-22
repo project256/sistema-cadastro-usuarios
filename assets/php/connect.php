@@ -10,9 +10,9 @@ session_start();
 
 //variaveis de  conexão adicionadas
 $host ='localhost';
-$db='test123';	
-$user ='root';
-$pass='';
+$db='teste123';	
+$user ='project256';
+$pass='12345';
 
 
 			//////////// Conexão com banco de dados //////////////////
