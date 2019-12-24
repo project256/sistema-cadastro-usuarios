@@ -87,7 +87,7 @@ if($idIsNotSet && $userIsNotLogged){
                 <a class="nav-link" href="#pablo" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="material-icons">settings</i>Configurações
                 </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
+                <div class="dropdown-menu dropdown-menu-right showing hiding" aria-labelledby="navbarDropdownProfile">
                   <a class="dropdown-item" href="assets/php/editarPerfil.php">Editar Perfil</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href='assets/php/encerraSessao.php'>Sair</a></div>

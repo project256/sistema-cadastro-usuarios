@@ -2,36 +2,18 @@
 require('connect.php');
 $id = $_SESSION['id'];
 
-$userChanges = array();
+$userChanges = array_filter($_POST['userChanges']);
 
-if(!empty($_POST['nome']) && isset($_POST['nome'])){
-	$userChanges['nome'] = $_POST['nome'];
-}
-
-if(!empty($_POST['sobrenome']) && isset($_POST['sobrenome'])){
-	$userChanges['sobrenome'] = $_POST['sobrenome'];
-}
-
-if(!empty($_POST['senha']) && isset($_POST['senha'])){
-	$userChanges['senha'] = md5($_POST['senha']);
-} 
-
-if(!empty($_POST['usuario']) && isset($_POST['usuario'])){
-	$userChanges['usuario']  = $_POST['usuario'];
-}
-
-if(!empty($_POST['email']) && isset($_POST['email'])){
-    $userChanges['email']  = $_POST['email'];
-}
-
-$var = array_keys($userChanges);
+$var = preg_replace("/'/","",array_keys($userChanges));
 $values = array_values($userChanges);
 
 for($i=0; $i<sizeof($var); $i++){
 
 	try {
 		$sql = "UPDATE loginSiteDirack set ".$var[$i]." = '".$values[$i]."' where id = '$id'";
-		$sql = $pdo->query($sql) or die();
+		
+		//echo $sql."<br>";
+		$sql = $pdo->query($sql) or die("ERRO NA QUERY");
 		$_SESSION[$var[$i]] = $values[$i];
 
     	} catch (PDOExcpetion $e) {
