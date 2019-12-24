@@ -1,5 +1,5 @@
 <?php
-session_start();
+require('../../includes/funcions/sessionstart.php');
 ?>
 <script src="./js/script.js"></script>
 <form action="atulizarPerfil.php" method="POST" autocomplete="off">
