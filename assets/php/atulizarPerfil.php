@@ -8,8 +8,8 @@ if(!empty($_POST['nome']) && isset($_POST['nome'])){
 	$userChanges['nome'] = $_POST['nome'];
 }
 
-if(!empty($_POST['sobre']) && isset($_POST['sobre'])){
-	$userChanges['sobrenome'] = $_POST['sobre'];
+if(!empty($_POST['sobrenome']) && isset($_POST['sobrenome'])){
+	$userChanges['sobrenome'] = $_POST['sobrenome'];
 }
 
 if(!empty($_POST['senha']) && isset($_POST['senha'])){
