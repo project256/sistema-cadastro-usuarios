@@ -2,18 +2,37 @@
 require('connect.php');
 $id = $_SESSION['id'];
 
-$nameIsSet = (!empty($_POST['nome']) && isset($_POST['nome']));
-$sobrenomeIsSet = (!empty($_POST['sobre']) && isset($_POST['sobre']));
-$passwordIsSet = (!empty($_POST['senha']) && isset($_POST['senha']));
-$userIsSet = (!empty($_POST['usuario']) && isset($_POST['usuario']));
-$emailIsSet = (!empty($_POST['email']) && isset($_POST['email']));
+$userChanges = array();
 
-function updateUserProfile($var,$value,$id,$pdo){
+if(!empty($_POST['nome']) && isset($_POST['nome'])){
+	$userChanges['nome'] = $_POST['nome'];
+}
+
+if(!empty($_POST['sobre']) && isset($_POST['sobre'])){
+	$userChanges['sobrenome'] = $_POST['sobre'];
+}
+
+if(!empty($_POST['senha']) && isset($_POST['senha'])){
+	$userChanges['senha'] = md5($_POST['senha']);
+} 
+
+if(!empty($_POST['usuario']) && isset($_POST['usuario'])){
+	$userChanges['usuario']  = $_POST['usuario'];
+}
+
+if(!empty($_POST['email']) && isset($_POST['email'])){
+    $userChanges['email']  = $_POST['email'];
+}
+
+$var = array_keys($userChanges);
+$values = array_values($userChanges);
+
+for($i=0; $i<sizeof($var); $i++){
 
 	try {
-		$sql = "UPDATE loginSiteDirack set $var = '$value' where id = '$id'";
-		echo $sql;
-        	$sql = $pdo->query($sql) or die();
+		$sql = "UPDATE loginSiteDirack set ".$var[$i]." = '".$values[$i]."' where id = '$id'";
+		$sql = $pdo->query($sql) or die();
+		$_SESSION[$var[$i]] = $values[$i];
 
     	} catch (PDOExcpetion $e) {
         	echo "ERRO: ".$e->getMessage();
@@ -21,40 +40,4 @@ function updateUserProfile($var,$value,$id,$pdo){
     	}
 }
 
-
-if($nameIsSet){
-    $value = $_POST['nome'];
-    $var = 'nome';
-    updateUserProfile($var,$value,$id,$pdo);
-    $_SESSION['nome'] = $value;
-} 
-
-if($sobrenomeIsSet){
-    $value = $_POST['sobre'];
-    $var = 'sobrenome'; 
-    updateUserProfile($var,$value,$id,$pdo);
-    $_SESSION['sobrenome'] = $value;
-} 
-
-if($passwordIsSet){
-	$value = md5($_POST['senha']);
-	$var = 'senha';
-	updateUserProfile($var,$value,$id,$pdo);
-	$_SESSION['senha'] = $value;
-} 
-
-if($userIsSet){
-	$value  = $_POST['usuario'];
-	$var = 'usuario';
-	updateUserProfile($var,$value,$id,$pdo);
-	$_SESSION['usuario'] = $value;
-} 
-
-if($emailIsSet){
-    $value  = $_POST['email'];
-	$var = 'email';
-	updateUserProfile($var,$value,$id,$pdo);
-	$_SESSION['email'] = $value;
-}
-
-
+header("Location: ../../perfil.php");
