@@ -16,11 +16,9 @@
 */
 session_start();
 
-unset($_SESSION['usuario']);
-unset($_SESSION['fotoPerfil']);
-unset($_SESSION['email']);
-unset($_SESSION['id']);
-	
+unset($_SESSION);
+$_SESSION = array();
+
 header('Location: ../../index.php'); 
 	 
 ?>
