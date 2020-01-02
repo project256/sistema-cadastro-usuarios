@@ -23,7 +23,7 @@ $userIsNotLogged = (empty($_SESSION['logado']) || !isset($_SESSION['logado']));
  
 if($idIsNotSet && $userIsNotLogged){
 	echo "Você precisa estar logado para acessar esta página!<br>";
-	echo "<a href='../../index.php'>Voltar</a>";
+	echo "<a href='index.php'>Voltar</a>";
 	exit;
 }else{
 
