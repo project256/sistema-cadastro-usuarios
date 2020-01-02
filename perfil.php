@@ -53,8 +53,6 @@ if($idIsNotSet && $userIsNotLogged){
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="./assets/css/material-kit.css?v=2.0.6" rel="stylesheet" />
-  <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="./assets/css/demo.css" rel="stylesheet" />
   <link rel="stylesheet" href="./assets/css/perfil.css">
 </head>
 
@@ -87,7 +85,7 @@ if($idIsNotSet && $userIsNotLogged){
                 <a class="nav-link" href="#pablo" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="material-icons">settings</i>Configurações
                 </a>
-                <div class="dropdown-menu dropdown-menu-right showing hiding" aria-labelledby="navbarDropdownProfile">
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
                   <a class="dropdown-item" href="assets/php/editarPerfil.php">Editar Perfil</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href='assets/php/encerraSessao.php'>Sair</a></div>
@@ -199,7 +197,7 @@ if($idIsNotSet && $userIsNotLogged){
   <!--   Core JS Files   -->
   <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
   <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
-  <script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+  <!--<script src="./assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>-->
   <script src="./assets/js/plugins/moment.min.js"></script>
   <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
   <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
@@ -208,7 +206,7 @@ if($idIsNotSet && $userIsNotLogged){
   <!--  Google Maps Plugin    -->
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
   <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
-  <script src="./assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
+ <script src="./assets/js/material-kit.js?v=2.0.6" type="text/javascript"></script>
   <script src="./assets/js/scripts.js"></script>
 </body>
 
