@@ -7,7 +7,17 @@
     left: 0px;
     right: 0px;
     background: rgb(224, 217, 217);
-    z-index: 5;
+    z-index: 4;
+}
+
+#blur{
+    background-color: gray;
+    z-index:2;
+    opacity:0.5;
+}
+
+html body div #blur{
+	height:100%;
 }
 
 .botoesFormFoto {

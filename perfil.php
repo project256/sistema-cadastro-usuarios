@@ -58,6 +58,8 @@ if($idIsNotSet && $userIsNotLogged){
 
 <body class="profile-page sidebar-collapse">
 
+<div class="containerFormAtualizacaoFoto" id="blur" style="position:absolute;width:100%;display:none;"></div>
+
   <nav class="navbar navbar-expand-lg bg-primary">
     <div class="container">
       <div class="navbar-translate">
