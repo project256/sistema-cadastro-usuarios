@@ -104,8 +104,8 @@ if($idIsNotSet && $userIsNotLogged){
           <div class="col-md-6 ml-auto mr-auto">
             <div class="profile">
               <div class="avatar" style="width:330px;margin:auto;">
-		<div id="foto-icone-container" style="z-index:1;background-color:gray;width:160px;height:80px;position:absolute;margin-right:85px;margin-left:85px;border-radius:0px 0px 80px 80px;cursor:pointer;display:none;">
-			<div id="foto-icone" style="width:24px;height:24px;padding-top:50px;margin:auto;">
+		<div id="foto-icone-container" style="opacity:0.7;z-index:1;background-color:white;width:160px;height:80px;position:absolute;margin-right:85px;margin-left:85px;border-radius:0px 0px 80px 80px;cursor:pointer;display:none;">
+			<div id="foto-icone" style="opacity:1;width:24px;height:24px;padding-top:50px;margin:auto;">
 				<img src="./assets/img/icons/camera.png" style="width:24px;height:24px;">
 			</div>
 		</div>
