@@ -1,13 +1,15 @@
 /*
 	 scripts.js (JavaScript)
 	 
-	 Objetivo: .
+	 Objetivo: Manipular o menu de atualização da foto de perfil do usuário.
+	 Este aparece quando o usuário clica sobre a sua foto de perfil na página
+	 de perfil.
 	 
-	 Site: http://www.dirackslounge.online
+	 Site: https://github.com/project-256-web/project-256
 	 
 	 Versão 1.0
 	 
-	 Programador: 	- Valcinei 17/12/2019 (Original)
+	 Programador: 	- Valcinei Júnior 17/12/2019 (Original)
 
 			- Rodolfo Dirack 03/01/2020 (Modificada)
 	 

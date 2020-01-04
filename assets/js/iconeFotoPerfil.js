@@ -3,7 +3,7 @@
 	 
 	 Objetivo: Manipular o ícone sobre a foto de perfil.
 	 
-	 Site: http://www.dirackslounge.online
+	 Site: https://github.com/project-256-web/project-256
 	 
 	 Versão 1.0
 	 
