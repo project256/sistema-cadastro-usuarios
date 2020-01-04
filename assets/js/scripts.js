@@ -17,7 +17,7 @@
 */
 
 $(function(){
-    let open = $('#avatar');
+    let open = $('#avatar,#foto-icone-container');
     let close = false;
     
     open.click(function(){
