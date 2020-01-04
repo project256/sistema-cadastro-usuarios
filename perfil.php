@@ -110,14 +110,15 @@ if($idIsNotSet && $userIsNotLogged){
               <img id="avatar" <?php echo "src=./assets/userImages/$FOTO"; ?> alt="Circle Image" class="img-raised rounded-circle img-fluid">
               </div>
               
-              <div class="upoptions" >
-                <form   method="post" enctype="multipart/form-data" action="assets/php/uploadImg.php">
-                <label   for="enviar">Escolher </label>
+              <div class="containerFormAtualizacaoFoto" >
+                <form method="post" enctype="multipart/form-data" action="assets/php/uploadImg.php">
+                <label for="enviar">Escolher </label>
                 <input id='enviar' name="arquivo" type="file" /><br>
                <input type="submit" value="Enviar" />
                 </form>                
               <a class='remover' href="assets/php/removerFoto.php">Remover</span></a>
               </div>
+
               <div class="name">
 	      <h3 style="text-transform:capitalize;" class="title"><?php echo "$USER"; ?></h3>
 		<h5 style="text-transform:capitalize;" class="title"><?php echo "$NOME"." $SOBRE"; ?></h5>
