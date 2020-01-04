@@ -110,13 +110,26 @@ if($idIsNotSet && $userIsNotLogged){
               <img id="avatar" <?php echo "src=./assets/userImages/$FOTO"; ?> alt="Circle Image" class="img-raised rounded-circle img-fluid">
               </div>
               
-              <div class="containerFormAtualizacaoFoto" >
-                <form method="post" enctype="multipart/form-data" action="assets/php/uploadImg.php">
-                <label for="enviar">Escolher </label>
-                <input id='enviar' name="arquivo" type="file" /><br>
-               <input type="submit" value="Enviar" />
-                </form>                
-              <a class='remover' href="assets/php/removerFoto.php">Remover</span></a>
+              <div class="containerFormAtualizacaoFoto" style="display:block;width:600px;height:500px;">
+		<div style="height:50px;border-bottom:1px solid gray;line-height:50px;padding:0px 10px 0px 10px;">
+			<div style="float:left;">Editar foto de perfil</div>
+			<div id="botaoFechar" style="float:right;">X</div>
+		</div>
+		<div style="height:350px;border-bottom:1px solid gray;background-color:black;color:white;">
+			Foto aqui!!!
+		</div>
+		<div style="line-height:100px;padding:0px 20px 0px 20px;">
+		        <form method="post" enctype="multipart/form-data" action="assets/php/uploadImg.php">
+			<div style="float:left;">
+				<a class='remover' href="assets/php/removerFoto.php">Excluir Foto</a>
+			</div>
+			<div style="float:right;">
+		        	<label for="enviar">Alterar Foto</label>
+			        <input id='enviar' name="arquivo" type="file" />
+			       <input type="submit" value="Salvar foto" />
+			</div>
+		        </form> 
+		</div>               
               </div>
 
               <div class="name">

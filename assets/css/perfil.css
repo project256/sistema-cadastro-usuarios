@@ -1,18 +1,17 @@
 
 .containerFormAtualizacaoFoto{
     position: absolute;
-    top: 0;
-    left: 50%;
+    margin:auto;
+    top: -125%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
     background: rgb(224, 217, 217);
-    padding: 6px;
-    padding-bottom: 20px;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    display: none;
     z-index: 5;
+}
+
+.botoesFormFoto {
+    display: inline-block;
 }
 
 .avatar img{
