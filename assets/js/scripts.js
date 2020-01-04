@@ -23,10 +23,10 @@ $(function(){
     open.click(function(){
         if(!close){
             close = true;
-            $('.upoptions').fadeIn(500);
+            $('.formAtualizacaoFotoContainer').fadeIn(500);
         }else{
             close = false;
-            $('.upoptions').fadeOut(500);
+            $('.formAtualizacaoFotoContainer').fadeOut(500);
         }
         
      });
