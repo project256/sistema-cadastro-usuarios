@@ -21,6 +21,7 @@
 $(function(){
     let open = $('#avatar,#foto-icone-container');
     let close = false;
+    let botaoFechar = $("#botaoFechar");
     
     open.click(function(){
         if(!close){
@@ -32,5 +33,12 @@ $(function(){
         }
         
      });
+
+	botaoFechar.click(function(){
+		if(close){
+		    close = false;
+		    $('.containerFormAtualizacaoFoto').fadeOut(500);
+		}
+	});
     
 });

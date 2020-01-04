@@ -110,7 +110,7 @@ if($idIsNotSet && $userIsNotLogged){
               <img id="avatar" <?php echo "src=./assets/userImages/$FOTO"; ?> alt="Circle Image" class="img-raised rounded-circle img-fluid">
               </div>
               
-              <div class="containerFormAtualizacaoFoto" style="display:block;width:600px;height:500px;">
+              <div class="containerFormAtualizacaoFoto" style="display:none;width:600px;height:500px;">
 		<div style="height:50px;border-bottom:1px solid gray;line-height:50px;padding:0px 10px 0px 10px;">
 			<div style="float:left;">Editar foto de perfil</div>
 			<div id="botaoFechar" style="float:right;">X</div>
