@@ -1,0 +1,64 @@
+
+.containerFormAtualizacaoFoto{
+    position: absolute;
+    margin:auto;
+    top: -125%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: rgb(224, 217, 217);
+    z-index: 4;
+}
+
+#blur{
+    background-color: gray;
+    z-index:2;
+    opacity:0.5;
+}
+
+html body div #blur{
+	height:100%;
+}
+
+.botoesFormFoto {
+    display: inline-block;
+}
+
+.avatar img{
+    cursor: pointer;
+    width: 160px;
+    height: 160px;
+}
+input[type='file']{
+    display: none;
+}
+.containerFormAtualizacaoFoto label, .remover{
+  background-color:#9c27b0 ;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  padding: 6px 15px;
+  
+}
+
+form{
+    margin-bottom: 5px;
+}
+a.remover{
+    text-decoration: none;
+    color: #fff;
+}
+input[type='submit']{
+    background-color: #9c27b0;
+    border-radius: 5px;
+    color: #fff;
+    border: 0;
+    height: 14px;
+    line-height: 1px;
+    padding: 14px;
+    padding-right: 60px;
+    margin-bottom: 10px;
+    width: 66px;   
+    cursor: pointer;
+}
