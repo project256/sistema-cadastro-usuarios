@@ -112,13 +112,15 @@ if($idIsNotSet && $userIsNotLogged){
               <img id="avatar" <?php echo "src=./assets/userImages/$FOTO"; ?> alt="Circle Image" class="img-raised rounded-circle img-fluid">
               </div>
               
-              <div class="containerFormAtualizacaoFoto" style="display:none;width:600px;height:500px;">
-		<div style="height:50px;border-bottom:1px solid gray;line-height:50px;padding:0px 10px 0px 10px;">
-			<div style="float:left;">Editar foto de perfil</div>
-			<div id="botaoFechar" style="float:right;">X</div>
+              <div class="containerFormAtualizacaoFoto" style="display:block;width:600px;height:500px;">
+		<div style="height:50px;border-bottom:1px solid gray;line-height:50px;padding:0px 20px 0px 20px;">
+			<div style="float:left"><b>Editar foto de perfil</b></div>
+			<div id="botaoFechar" style="float:right;"><b>X</b></div>
 		</div>
 		<div style="height:350px;border-bottom:1px solid gray;background-color:black;color:white;">
-			Foto aqui!!!
+			<div id="fotoEscolhida" style="height:350px;margin:0px 100px 0px 100px; padding-top:175px;">
+				<img <?php echo "src=./assets/userImages/$FOTO"; ?> alt="Circle Image" style="height:200px;width:200px;" class="rounded-circle">
+			</div>
 		</div>
 		<div style="line-height:100px;padding:0px 20px 0px 20px;">
 		        <form method="post" enctype="multipart/form-data" action="assets/php/uploadImg.php">
