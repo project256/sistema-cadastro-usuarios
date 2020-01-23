@@ -77,3 +77,18 @@ input[type='submit']{
 	border: 1px solid #9c27b0;
 	color:#3C4858;
 }
+
+#labelEnviar:hover{
+	background-color:#bf7acf;
+	border: 2px solid #9c27b0;
+	color: white;
+}
+
+#salvar{
+	background-color:#bf7acf;
+	color: white;
+}
+
+#salvar:hover{
+	background-color:#9E4DB0;
+}
