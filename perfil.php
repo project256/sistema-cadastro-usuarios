@@ -115,7 +115,7 @@ if($idIsNotSet && $userIsNotLogged){
               <div class="containerFormAtualizacaoFoto" style="display:block;width:600px;height:500px;">
 		<div style="height:50px;border-bottom:1px solid gray;line-height:50px;padding:0px 20px 0px 20px;">
 			<div style="float:left"><b>Editar foto de perfil</b></div>
-			<div id="botaoFechar" style="float:right;"><b>X</b></div>
+			<div id="botaoFechar" style="float:right;cursor:pointer;"><b>X</b></div>
 		</div>
 		<div style="height:350px;border-bottom:1px solid gray;background-color:black;color:white;">
 			<div id="fotoEscolhida" style="height:350px;margin:0px 100px 0px 100px; padding-top:175px;">
@@ -129,8 +129,8 @@ if($idIsNotSet && $userIsNotLogged){
 			</div>
 			<div style="float:right;">
 		        	<label for="enviar">Alterar Foto</label>
-			        <input id='enviar' name="arquivo" type="file" />
-			       <input type="submit" value="Salvar foto" />
+			        <input id='enviar' style="height:100px;" name="arquivo" type="file" />
+			       <input id='salvar' type="submit" value="Salvar foto" />
 			</div>
 		        </form> 
 		</div>               
