@@ -27,6 +27,11 @@ $(function(){
         if(!close){
             close = true;
             $('.containerFormAtualizacaoFoto').fadeIn(500);
+
+	    $('#enviar').change(function(){
+		console.log($(this)[0].files);
+	    });
+
         }else{
             close = false;
             $('.containerFormAtualizacaoFoto').fadeOut(500);

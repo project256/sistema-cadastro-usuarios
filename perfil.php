@@ -112,14 +112,14 @@ if($idIsNotSet && $userIsNotLogged){
               <img id="avatar" <?php echo "src=./assets/userImages/$FOTO"; ?> alt="Circle Image" class="img-raised rounded-circle img-fluid">
               </div>
               
-              <div class="containerFormAtualizacaoFoto" style="display:block;width:600px;height:500px;">
+              <div class="containerFormAtualizacaoFoto" style="display:none;width:600px;height:500px;">
 		<div style="height:50px;border-bottom:1px solid gray;line-height:50px;padding:0px 20px 0px 20px;">
 			<div style="float:left"><b>Editar foto de perfil</b></div>
 			<div id="botaoFechar" style="float:right;cursor:pointer;"><b>X</b></div>
 		</div>
 		<div style="height:350px;border-bottom:1px solid gray;background-color:black;color:white;">
 			<div id="fotoEscolhida">
-				<img <?php echo "src=./assets/userImages/$FOTO"; ?> alt="Circle Image" style="height:200px;width:200px;" class="rounded-circle">
+				<img id="imagemCarregada" <?php echo "src=./assets/userImages/$FOTO"; ?> alt="Circle Image" style="height:200px;width:200px;" class="rounded-circle">
 			</div>
 		</div>
 		<div style="line-height:100px;padding:0px 20px 0px 20px;">
