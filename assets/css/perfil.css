@@ -92,3 +92,10 @@ input[type='submit']{
 #salvar:hover{
 	background-color:#9E4DB0;
 }
+
+#fotoEscolhida{
+	height:350px;
+	margin:0px 150px 0px 150px;
+	padding-top:175px;
+	background-color: white;
+}

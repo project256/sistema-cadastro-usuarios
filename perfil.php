@@ -118,7 +118,7 @@ if($idIsNotSet && $userIsNotLogged){
 			<div id="botaoFechar" style="float:right;cursor:pointer;"><b>X</b></div>
 		</div>
 		<div style="height:350px;border-bottom:1px solid gray;background-color:black;color:white;">
-			<div id="fotoEscolhida" style="height:350px;margin:0px 100px 0px 100px; padding-top:175px;">
+			<div id="fotoEscolhida">
 				<img <?php echo "src=./assets/userImages/$FOTO"; ?> alt="Circle Image" style="height:200px;width:200px;" class="rounded-circle">
 			</div>
 		</div>
