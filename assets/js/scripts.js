@@ -29,7 +29,15 @@ $(function(){
             $('.containerFormAtualizacaoFoto').fadeIn(500);
 
 	    $('#enviar').change(function(){
-		console.log($(this)[0].files);
+
+		const file = $(this)[0].files[0];
+		const fileReader = new FileReader();
+
+		fileReader.onloadend = function(){
+			$('#imagemCarregada').attr('src',fileReader.result);
+		};
+
+		fileReader.readAsDataURL(file);
 	    });
 
         }else{
