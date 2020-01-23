@@ -125,10 +125,10 @@ if($idIsNotSet && $userIsNotLogged){
 		<div style="line-height:100px;padding:0px 20px 0px 20px;">
 		        <form method="post" enctype="multipart/form-data" action="assets/php/uploadImg.php">
 			<div style="float:left;">
-				<a class='remover' href="assets/php/removerFoto.php">Excluir Foto</a>
+				<a class='remover' id="excluir" href="assets/php/removerFoto.php">Excluir foto</a>
 			</div>
 			<div style="float:right;">
-		        	<label for="enviar">Alterar Foto</label>
+		        	<label id="labelEnviar" for="enviar">Alterar foto</label>
 			        <input id='enviar' style="height:100px;" name="arquivo" type="file" />
 			       <input id='salvar' type="submit" value="Salvar foto" />
 			</div>

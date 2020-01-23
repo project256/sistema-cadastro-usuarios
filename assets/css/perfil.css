@@ -62,3 +62,18 @@ input[type='submit']{
     width: 66px;   
     cursor: pointer;
 }
+
+#excluir{
+	background-color:#E0D9D9;
+	color:#3C4858;
+}
+
+#excluir:hover{
+	font-weight: bold;
+}
+
+#labelEnviar{
+	background-color:#E0D9D9;
+	border: 1px solid #9c27b0;
+	color:#3C4858;
+}
