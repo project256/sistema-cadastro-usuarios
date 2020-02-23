@@ -32,7 +32,7 @@ if($idIsNotSet && $userIsNotLogged){
 	$EMAIL=$_SESSION['email'];
 	$ID=$_SESSION['id'];
 	$NOME=$_SESSION['nome'];
-	$PATH=$_SERVER['DOCUMENT_ROOT']."/project-256";
+	$PATH="/project-256";
 ?>
 <?php
 }
