@@ -96,7 +96,7 @@ include('includes/funcions/sessionstart.php');
               <img id="avatar" <?php echo "src=./assets/userImages/$FOTO"; ?> alt="Circle Image" class="img-raised rounded-circle img-fluid">
               </div>
               
-              <div class="containerFormAtualizacaoFoto" style="display:none;width:600px;height:500px;">
+              <div class="containerFormAtualizacaoFoto" style="display:none;width:600px;height:500px;border-radius:5px;border:1px solid gray;">
 		<div style="height:50px;border-bottom:1px solid gray;line-height:50px;padding:0px 20px 0px 20px;">
 			<div style="float:left"><b>Editar foto de perfil</b></div>
 			<div id="botaoFechar" style="float:right;cursor:pointer;"><b>X</b></div>
