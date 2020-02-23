@@ -27,6 +27,19 @@ $(function(){
         if(!close){
             close = true;
             $('.containerFormAtualizacaoFoto').fadeIn(500);
+
+	    $('#enviar').change(function(){
+
+		const file = $(this)[0].files[0];
+		const fileReader = new FileReader();
+
+		fileReader.onloadend = function(){
+			$('#imagemCarregada').attr('src',fileReader.result);
+		};
+
+		fileReader.readAsDataURL(file);
+	    });
+
         }else{
             close = false;
             $('.containerFormAtualizacaoFoto').fadeOut(500);

@@ -35,7 +35,7 @@ if ( isset( $_FILES[ 'arquivo' ][ 'name' ] ) && $_FILES[ 'arquivo' ][ 'error' ] 
             echo ' < img src = "' . $destino . '" />';
             try {
                 //aqui faz a troca de foto no banco de dados
-                $sql = "UPDATE loginsitedirack set fotoPerfil = '$novoNome' WHERE id ='$id'";
+                $sql = "UPDATE loginSiteDirack set fotoPerfil = '$novoNome' WHERE id ='$id'";
                 $sql = $pdo->query($sql) or die();
                
                 //aqui atualiza a foto da sessão

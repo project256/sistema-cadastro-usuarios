@@ -13688,12 +13688,6 @@ fieldset[disabled][disabled] .has-rose .form-control,
   background-size: 100% 100%, 100% 100%, 1.1875rem 1.1875rem;
 }
 
-.form-control,
-label,
-input::placeholder {
-  line-height: 1.1;
-}
-
 label {
   color: #AAAAAA;
 }
