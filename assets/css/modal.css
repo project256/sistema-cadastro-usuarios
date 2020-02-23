@@ -1,0 +1,69 @@
+#fade {
+    position: absolute;
+    top: 0;
+    display: none;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+    background: rgba(0,0,0,0.7);
+  }
+  #ctnModal {
+    width: 50%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 2px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  #fecharModal {
+    display: flex;
+    justify-content: flex-end;
+    padding: 7px;
+  }
+  #close {
+    cursor: pointer;
+  }
+  #tituloModal {
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+    color: #666;
+    font-size: 18px;
+  }
+  .form{    
+      margin: 0 auto;
+      width: 50%;
+  }
+  input[type="text"],input[type="email"],input[type="password"]{
+    padding: 8px;
+    margin: 5px 0;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+input[type="submit"]{
+    background-color: #9c27b0;
+    border-radius: 5px;
+    color: #fff;
+    padding: 6px 15px;
+    border: 0;
+    cursor: pointer;
+}
+textarea{
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+    width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
