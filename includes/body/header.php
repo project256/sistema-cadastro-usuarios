@@ -57,7 +57,7 @@
       <div class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a href="#pablo" class="nav-link">
+	  <a href="<?php echo $PATH;?>/Page.php" class="nav-link">
               <i class="material-icons">home</i> Home
             </a>
           </li>
