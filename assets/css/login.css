@@ -1,0 +1,65 @@
+/*
+	 login.css (CSS)
+	 
+	 Objetivo: Página de login do site.
+	 
+	 Site: http://www.dirackslounge.online
+	 
+	 Versão 1.0
+	 
+	 Programador: Rodolfo Dirack 22/07/2019
+	 
+	 Email: rodolfo_profissional@hotmail.com
+	 
+	 Licença: GPL-3.0 <https://www.gnu.org/licenses/gpl-3.0.txt>.
+*/
+
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+#fundo-externo {
+	background-image: url("../images/bg.jpg");
+	background-position: 50%, 50%;
+	min-width: 100%;
+	min-height: 639px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#caixa-login{
+	width: 300px;
+	height: 300px;
+	background-color: #ffffff;
+	position: absolute;
+	margin: auto;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	padding: 20px 60px;
+}
+
+.title{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+}
+
+.title img{
+	float: left;
+}
+
+.title span{
+	margin-left: 10px;
+}
+
+
+
+
+
+
+
+

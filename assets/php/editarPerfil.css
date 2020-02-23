@@ -1,0 +1,44 @@
+/*
+	 editarPerfil.css (CSS)
+	 
+	 Objetivo: Estilo do formulário de edição do perfil.
+	 
+	 Site: http://www.dirackslounge.online
+	 
+	 Versão 1.0
+	 
+	 Programador: Rodolfo Dirack 23/02/2020
+	 
+	 Email: rodolfo_profissional@hotmail.com
+	 
+	 Licença: GPL-3.0 <https://www.gnu.org/licenses/gpl-3.0.txt>.
+*/
+
+#formEditarPerfil{
+	border: 2px solid gray;
+	width: 50%;
+	margin:auto;
+	padding:25px;
+	margin-top: 40px;
+	border-radius: 5px;
+}
+
+#formEditarPerfil input{
+	margin-top:10px;
+}
+
+#formEditarPerfil input[type="submit"]:hover{
+	background-color:#bf7acf;
+}
+
+#formEditarPerfil input[type="submit"]{
+	background-color:#9E4DB0;
+}
+
+#tituloForm{
+	width=50%;
+	margin:auto;
+	text-align:center;
+	border: 1px solid gray;
+	border-radius: 5px;
+}

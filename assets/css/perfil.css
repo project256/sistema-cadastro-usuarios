@@ -1,0 +1,101 @@
+
+.containerFormAtualizacaoFoto{
+    position: absolute;
+    margin:auto;
+    top: -125%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: rgb(224, 217, 217);
+    z-index: 4;
+}
+
+#blur{
+    background-color: gray;
+    z-index:2;
+    opacity:0.5;
+}
+
+html body div #blur{
+	height:100%;
+}
+
+.botoesFormFoto {
+    display: inline-block;
+}
+
+.avatar img{
+    cursor: pointer;
+    width: 160px;
+    height: 160px;
+}
+input[type='file']{
+    display: none;
+}
+.containerFormAtualizacaoFoto label, .remover{
+  background-color:#9c27b0 ;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  padding: 6px 15px;
+  
+}
+
+form{
+    margin-bottom: 5px;
+}
+a.remover{
+    text-decoration: none;
+    color: #fff;
+}
+input[type='submit']{
+    background-color: #9c27b0;
+    border-radius: 5px;
+    color: #fff;
+    border: 0;
+    height: 31px;
+    line-height: 1px;
+    padding: 14px;
+    padding-right: 85px;
+    margin-bottom: 10px;
+    width: 66px;   
+    cursor: pointer;
+}
+
+#excluir{
+	background-color:#E0D9D9;
+	color:#3C4858;
+}
+
+#excluir:hover{
+	font-weight: bold;
+}
+
+#labelEnviar{
+	background-color:#E0D9D9;
+	border: 1px solid #9c27b0;
+	color:#3C4858;
+}
+
+#labelEnviar:hover{
+	background-color:#bf7acf;
+	border: 2px solid #9c27b0;
+	color: white;
+}
+
+#salvar{
+	background-color:#bf7acf;
+	color: white;
+}
+
+#salvar:hover{
+	background-color:#9E4DB0;
+}
+
+#fotoEscolhida{
+	height:350px;
+	margin:0px 150px 0px 150px;
+	padding-top:175px;
+	background-color: white;
+}
