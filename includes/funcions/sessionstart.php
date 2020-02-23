@@ -32,6 +32,7 @@ if($idIsNotSet && $userIsNotLogged){
 	$EMAIL=$_SESSION['email'];
 	$ID=$_SESSION['id'];
 	$NOME=$_SESSION['nome'];
+	$SOBRE=$_SESSION['sobrenome']; 
 	$PATH="/project-256";
 ?>
 <?php
