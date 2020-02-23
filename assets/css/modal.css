@@ -37,7 +37,7 @@
       margin: 0 auto;
       width: 50%;
   }
-  input[type="text"],input[type="email"]{
+  input[type="text"],input[type="email"],input[type="password"]{
     padding: 8px;
     margin: 5px 0;
     width: 100%;
