@@ -1,5 +1,7 @@
 <?php
 require('../../includes/funcions/sessionstart.php');
+$ROOT_PATH=$_SERVER['DOCUMENT_ROOT']."$PATH";
+require("$ROOT_PATH/includes/body/header.php");
 ?>
 <script src="./js/script.js"></script>
 <form action="atulizarPerfil.php" method="POST" autocomplete="off">
@@ -12,3 +14,8 @@ require('../../includes/funcions/sessionstart.php');
 
     <input type="submit" value="Trocar">
 </form>
+
+<?php
+require("$ROOT_PATH/includes/body/body.php");
+require("$ROOT_PATH/includes/body/footer.php");
+?>
