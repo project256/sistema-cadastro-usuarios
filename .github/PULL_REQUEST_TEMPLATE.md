@@ -10,8 +10,6 @@ Resolve #(issue)
 
 **Tipo da modificação**
 
-Please delete options that are not relevant.
-
 - [ ] Correção de Bug (modificação que corrige uma problema)
 - [ ] Nova feature (modificação que adiciona uma funcionalidade)
 - [ ] Atualização de documentação
