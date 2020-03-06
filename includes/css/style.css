@@ -71,11 +71,13 @@ body {
 .container .container-forms {
   position: relative;
 }
-.container .btn {
+.container .btn, 
+.container .btn2
+{ 
   cursor: pointer;
   text-align: center;
   margin: 0 auto;
-  width: 60px;
+  width: 80px;
   color: #fff;
   background-color: #9c27b0 ;
   opacity: 1;
@@ -83,6 +85,12 @@ body {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  
+}
+.container .btn2{
+  width: 120px;
+  text-align: center;
+  border: 0;
 }
 .container .btn:hover {
   opacity: 0.7;
@@ -161,8 +169,8 @@ body {
 }
 .container .container-form .btn {
   position: relative;
-  box-shadow: 0 0 10px 1px #90c4ae;
   margin-top: 30px;
+  border: 0;
 }
 .container .form-item {
   position: absolute;
