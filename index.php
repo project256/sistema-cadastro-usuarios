@@ -81,7 +81,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> 
 </div>
 <a class="box-item" href="https://www.instagram.com/gabrielalves.code/" target="_blank"><img src="./assets/img/Logo/logo1.png" class="rabbit"> </a>
 <!-- partial -->
