@@ -1,0 +1,147 @@
+.openchat{
+    display: flex;
+    cursor: pointer;
+    width: 180px;
+    padding: 8px 4px 7px 8px;
+    max-height: 43px;
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    background: #fff;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.nomebox{
+    flex:3;
+    display: flex;
+    justify-content: center;
+}
+.nomebox span{
+    font-size: 13px;
+    font-weight: bold;
+}
+.imgbox {
+    display:flex;
+    flex:1;
+    justify-content: center;
+}
+.imgbox img{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.closebox{
+    flex:1;
+    display: flex;
+    justify-content: center;
+}
+.closebox i{
+    color: #888;
+}
+.chatbox{
+    z-index: 6;
+    background:#fff;
+    display: none;
+    height: 351px;
+    width: 284px;
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    flex-direction: column;    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .3);
+    justify-content: space-between;
+}
+.headerchat{
+    display: flex;
+    background:red;
+    flex-direction:row;
+    cursor: pointer;
+    padding: 8px 4px 7px 8px;
+    max-height: 43px;
+    background: #fff;
+    align-items: center;
+    justify-content: space-evenly;    
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow:  1px 1px rgba(0, 0, 0, .3);
+}
+.headerchat .imgbox img{
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.headerchat .nomebox span{
+    font-size: 16px;
+}
+.headerchat .closebox i{
+    font-size: 22px;
+}
+.footerchat form{
+   
+   margin-bottom: 15px;
+}
+.footerchat input{
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-top: 1px solid #ddd;
+    padding: 8px 16px;
+}
+.bodychat{
+    flex:1;
+}
+.bodychat .me{    
+    display: flex;
+    margin-top: 10px;
+}
+.bodychat .me span{
+    background:#9c27b0 ;
+    padding: 8px 15px;
+    margin-left: 5px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    color:#fff;
+}
+.bodychat .other{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+.bodychat .other span{
+    background:#ddd;
+    display: flex;
+    justify-content: flex-end;    
+    padding: 8px;
+    margin-right: 10px;    
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    color: #000;
+}
+.bodychat .other span,
+.bodychat .me span{
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.bodychat .me img{
+    margin-left: 5px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
