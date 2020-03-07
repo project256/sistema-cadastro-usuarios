@@ -72,7 +72,7 @@
         	<input name="Password" placeholder="Senha" type="Password" required/>
 	        <!--<div class="btn">
 -->
-        	<input class="btn" type="submit" value=" Cadastrar">
+        	<input class="btn2" type="submit" value=" Cadastrar">
 		<!--</div>
 -->
 		</form>
