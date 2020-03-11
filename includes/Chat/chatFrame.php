@@ -16,6 +16,8 @@
  */
 $ROOT_PATH=$_SERVER['DOCUMENT_ROOT']."/project-256";
 include("$ROOT_PATH/includes/funcions/sessionstart.php");
+include("$ROOT_PATH/assets/php/connect.php");
+include("postagem.php");
 ?>
 <!doctype html>
 <head>
@@ -24,24 +26,24 @@ include("$ROOT_PATH/includes/funcions/sessionstart.php");
 </head>
 <body>
 <div class="bodychat">
-	    <div class="me">
-               <img width="30" height="30" src="<?php echo $PATH;?>/assets/userImages/15764828375df73815de2f1.jpg" alt=""> <span>Olá</span>
-            </div>
-            <div class="other">
-                <span>Salve programador !</span>
-            </div>
-            <div class="me">
-               <img width="30" height="30" src="<?php echo $PATH;?>/assets/userImages/15764828375df73815de2f1.jpg" alt=""> <span>Salveeeeeeeeeeeeeeeeeeeeee</span>
-            </div>
-            <div class="me">
-               <img width="30" height="30" src="<?php echo $PATH;?>/assets/userImages/15764828375df73815de2f1.jpg" alt=""> <span>Brabo</span>
-            </div>
-            <div class="other">
-                <span>Tudo bom ?</span>
-            </div>
-            <div class="other">
-                <span>Qual a boa ?</span>
-            </div>
+
+<?php
+	$sql = "SELECT * FROM chat";
+	$sql=$pdo->query($sql);
+
+	if($sql->rowCount()>0){
+		foreach($sql->fetchAll() as $msg){
+			$data=$msg['data'];
+			$autor=$msg['autor'];
+			$mensagem=$msg['mensagem'];
+			$usuario="Dirack";
+			$userImage="/project-256/assets/userImages/15764828375df73815de2f1.jpg"; 
+			postagem($data,$autor,$mensagem,$usuario,$userImage);
+		}
+	}
+
+?>	
+
 </div>
 </body>
 </html>
