@@ -1,5 +1,5 @@
-<!doctype html>
-<!--
+<?php
+/*
 	chatFrame.php (PHP)
 	
 	Objetivo: Iframe com as conversas da caiza de diálogo do Chat.
@@ -13,8 +13,18 @@
 	Email: rodolfo_profissional@hotmail.com
 	
 	Licença: GPL-3.0 <https://www.gnu.org/licenses/gpl-3.0.txt>.
--->
-            <div class="me">
+ */
+$ROOT_PATH=$_SERVER['DOCUMENT_ROOT']."/project-256";
+include("$ROOT_PATH/includes/funcions/sessionstart.php");
+?>
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="<?php echo $PATH;?>/assets/css/chat.css">
+</head>
+<body>
+<div class="bodychat">
+	    <div class="me">
                <img width="30" height="30" src="<?php echo $PATH;?>/assets/userImages/15764828375df73815de2f1.jpg" alt=""> <span>Olá</span>
             </div>
             <div class="other">
@@ -32,7 +42,6 @@
             <div class="other">
                 <span>Qual a boa ?</span>
             </div>
-
-<?php
-
-?>
+</div>
+</body>
+</html>
