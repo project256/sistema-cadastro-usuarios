@@ -34,6 +34,7 @@ if($idIsNotSet && $userIsNotLogged){
 	$NOME=$_SESSION['nome'];
 	$SOBRE=$_SESSION['sobrenome']; 
 	$PATH="/project-256";
+	$ROOT_PATH=$_SESSION['path'];
 ?>
 <?php
 }
