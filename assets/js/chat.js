@@ -19,6 +19,8 @@
 $('.openchatbox').click(()=>{
     $('.openchat').hide();
     $('.chatbox').show();
+    var $contents = $("#chatIframe").contents();
+    $contents.scrollTop($contents.height());
 })
 
 $('#closeopenbox').click(() => {
@@ -32,3 +34,4 @@ $('#nomechatbox').click(() => {
     $('.openchat').show();
     $('.chatbox').hide();
 })
+
