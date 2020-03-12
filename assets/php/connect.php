@@ -1,5 +1,4 @@
 <?php
-session_start();
 /*
 	connect.php (PHP) 
 
@@ -7,6 +6,9 @@ session_start();
 
 	Programador: Rodolfo A. C. Neves (Dirack) 11/12/2019
 */
+
+//$ROOT_PATH=$_SERVER['DOCUMENT_ROOT']."/project-256";
+//include("$ROOT_PATH/includes/funcions/sessionstart.php");
 
 //variaveis de  conexão adicionadas
 $host ='localhost';
