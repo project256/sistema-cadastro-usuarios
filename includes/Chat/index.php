@@ -33,8 +33,8 @@
     </div>
 	<iframe src="<?php echo $PATH;?>/includes/Chat/chatFrame.php" id='chatIframe' class='iframeMensagens'></iframe>
 	 <div class="footerchat">
-        <form action="">
-            <input placeholder="Digite sua mensagem..." type="text">
+	 <form method="POST" action="<?php echo $PATH;?>/includes/Chat/chat.php">
+            <input name="mensagem" placeholder="Digite sua mensagem..." type="text">
         </form>
     </div>
 </div>
