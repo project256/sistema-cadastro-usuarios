@@ -31,9 +31,11 @@
             <i class="fas fa-times"></i>
         </div> 
     </div>
+	<div class="historicoMensagens">
 	<iframe src="<?php echo $PATH;?>/includes/Chat/chatFrame.php" id='chatIframe' class='iframeMensagens'></iframe>
+	</div>
 	 <div class="footerchat">
-	 <form method="POST" action="<?php echo $PATH;?>/includes/Chat/chat.php">
+	 <form class="formMensagem">
             <input name="mensagem" placeholder="Digite sua mensagem..." type="text">
         </form>
     </div>
