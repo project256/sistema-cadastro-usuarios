@@ -1,4 +1,5 @@
 <?php
+require("../../includes/funcions/sessionstart.php");
 require('connect.php');
 $id = $_SESSION['id'];
 

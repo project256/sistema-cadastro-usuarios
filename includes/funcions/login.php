@@ -42,6 +42,7 @@ if($userIsSet && $passwdIsSet){
 			$_SESSION['nome'] = $p['nome'];
 			$_SESSION['senha'] = $p['senha'];
 			$_SESSION['sobrenome'] = $p['sobrenome'];
+			$_SESSION['path'] = $_SERVER['DOCUMENT_ROOT']."/project-256";
 		}
 
 		header('Location: Page.php');

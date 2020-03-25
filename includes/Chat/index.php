@@ -31,29 +31,12 @@
             <i class="fas fa-times"></i>
         </div> 
     </div>
-    <div class="bodychat">
-            <div class="me">
-               <img width="30" height="30" src="<?php echo $PATH;?>/assets/userImages/15764828375df73815de2f1.jpg" alt=""> <span>Olá</span>
-            </div>
-            <div class="other">
-                <span>Salve programador !</span>
-            </div>
-            <div class="me">
-               <img width="30" height="30" src="<?php echo $PATH;?>/assets/userImages/15764828375df73815de2f1.jpg" alt=""> <span>Salveeeeeeeeeeeeeeeeeeeeee</span>
-            </div>
-            <div class="me">
-               <img width="30" height="30" src="<?php echo $PATH;?>/assets/userImages/15764828375df73815de2f1.jpg" alt=""> <span>Brabo</span>
-            </div>
-            <div class="other">
-                <span>Tudo bom ?</span>
-            </div>
-            <div class="other">
-                <span>Qual a boa ?</span>
-            </div>
-    </div>
-    <div class="footerchat">
-        <form action="">
-            <input placeholder="Digite sua mensagem..." type="text">
+	<div class="historicoMensagens">
+	<iframe src="<?php echo $PATH;?>/includes/Chat/chatFrame.php" id='chatIframe' class='iframeMensagens'></iframe>
+	</div>
+	 <div class="footerchat">
+	 <form class="formMensagem">
+            <input name="mensagem" placeholder="Digite sua mensagem..." type="text">
         </form>
     </div>
 </div>
