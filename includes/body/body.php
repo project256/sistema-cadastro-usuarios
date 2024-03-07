@@ -18,5 +18,5 @@
     </div>
     </div>
     <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" data-auto-replace-svg="nest"></script>
-    <?php include 'includes/Chat/index.php';?>    
+    <!--<?php //include 'includes/Chat/index.php';?>    -->
 </div>

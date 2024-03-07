@@ -6,6 +6,17 @@ Este template é um sistema de login completo em PHP e com banco de dados SQL.
 O usuário pode fazer login ou se cadastrar na página inicial do site.
 Também possui um sistema de atualização de foto de perfil e cadastro para que o usuário personalize a sua página.
 
+## Quick Start
+
+Este sistema utiliza um banco de dados MySQL para realizar o login. A forma mais fácil de iniciar este sistema criar um database chamado
+'test123' no phpmyadmin e importar a tabela de usuários em 'assets/database\_backup/loginSiteDirack.sql' neste database.
+As informações de conexão e a conexão estão no script 'assets/php/connect.php'. Para testar o login, utilize o seguinte usuário:
+
+```
+Usuário: Rodolfo
+Senha: 12345
+```
+
 #### Integrantes do Project-256
 
 - [GabrielAlves256](https://github.com/GabrielAlves256)

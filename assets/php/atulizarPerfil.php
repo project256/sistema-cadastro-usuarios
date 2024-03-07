@@ -1,4 +1,5 @@
 <?php
+include '../../config.php';
 require('connect.php');
 $id = $_SESSION['id'];
 
@@ -10,7 +11,11 @@ $values = array_values($userChanges);
 for($i=0; $i<sizeof($var); $i++){
 
 	try {
-		$sql = "UPDATE loginSiteDirack set ".$var[$i]." = '".$values[$i]."' where id = '$id'";
+		if($var[$i] == 'senha'){
+			$sql = "UPDATE loginsitedirack set ".$var[$i]." = '".md5($values[$i])."' where id = '$id'";
+		}else{
+			$sql = "UPDATE loginsitedirack set ".$var[$i]." = '".$values[$i]."' where id = '$id'";
+		}
 		
 		//echo $sql."<br>";
 		$sql = $pdo->query($sql) or die("ERRO NA QUERY");

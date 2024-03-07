@@ -1,11 +1,12 @@
 <?php
-require('../../includes/funcions/sessionstart.php');
-$ROOT_PATH=$_SERVER['DOCUMENT_ROOT']."$PATH";
-require("$ROOT_PATH/includes/body/header.php");
+include '../../config.php';
+
+require($SITE_ROOT.'/includes/funcions/sessionstart.php');
+require($SITE_ROOT."/includes/body/header.php");
 ?>
 <link type="text/css" rel="stylesheet" href="editarPerfil.css">
-<script src="./js/script.js"></script>
-<form id="formEditarPerfil" action="atulizarPerfil.php" method="POST" autocomplete="off">
+<script src="<?php echo $SITE_BASENAME; ?>/assets/js/script.js"></script>
+<form id="formEditarPerfil" action="<?php echo $SITE_BASENAME; ?>/assets/php/atulizarPerfil.php" method="POST" autocomplete="off">
 <div id="tituloForm"><h3><strong>Atualização de Perfil de usuário</strong></h3></div><br>
 Digite novos valores para os campos que você deseja mudar:<br>
 <input type="text" name="userChanges['nome']" placeholder="Digite um novo Nome"><br>
@@ -18,6 +19,6 @@ Digite novos valores para os campos que você deseja mudar:<br>
 </form>
 
 <?php
-require("$ROOT_PATH/includes/body/body.php");
-require("$ROOT_PATH/includes/body/footer.php");
+require(__DIR__."/../../includes/body/body.php");
+require(__DIR__."/../../includes/body/footer.php");
 ?>
